@@ -475,4 +475,35 @@ img {
     height: 300px;
     margin-top: 20px;
   }
+
+}
+/* BOTÃO VOLTAR — FIXO NO CANTO INFERIOR DIREITO */
+.btn-voltar {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+
+  background: var(--sage-500);
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 12px;
+  
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+
+  transition: 0.25s ease;
+  z-index: 999;
+}
+
+.btn-voltar:hover {
+  background: var(--sage-700);
+  transform: translateY(-3px);
+}
+
+/* DARK MODE */
+.dark .btn-voltar {
+  background: var(--accent-dark);
+  color: #1d1f1b;
 }

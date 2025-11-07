@@ -1,23 +1,18 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Letícia Dalprá — Início</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Letícia Dalprá — Futura Nutricionista</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
 
+<body>
 <header class="site-header">
   <div class="container header-inner">
     <div class="brand">
-      <svg viewBox="0 0 24 24" width="34" height="34" fill="none" stroke="currentColor" stroke-width="1.2">
-        <path d="M12 21s-6-5.5-6-10a6 6 0 0 1 12 0c0 4.5-6 10-6 10z"/><path d="M12 7v6" stroke-linecap="round"/>
-      </svg>
-      <div>
-        <h1>Letícia Dalprá</h1>
-        <p class="micro">Futura Nutricionista</p>
-      </div>
+      <h1>Letícia Dalprá</h1>
+      <div class="micro">Futura Nutricionista</div>
     </div>
 
     <nav class="main-nav">
@@ -27,58 +22,47 @@
         <li><a href="historia.html">Minha História</a></li>
         <li><a href="receitas.html">Receitas</a></li>
         <li><a href="conteudos.html">Conteúdos Educativos</a></li>
-        <li><a href="contato.html" class="btn-ghost">Contato</a></li>
+        <li><a href="contato.html">Contato</a></li>
       </ul>
     </nav>
-
-    <button id="darkToggle" class="dark-toggle" aria-label="Alternar modo escuro">🌙</button>
   </div>
 </header>
 
-<section class="hero-pro index-intro">
-  <div class="container hero-pro-inner single-col">
-    <div class="hero-pro-text fade-in">
-      <h2 class="hero-pro-nome">Bem-vindo(a) ao meu espaço!</h2>
-      <p class="hero-pro-desc">
-        Aqui eu compartilho minha jornada rumo à Nutrição, aprendizados, receitas simples
-        e conteúdos educativos para tornar a alimentação mais leve e consciente.
-      </p>
-      <p class="hero-pro-desc">
-        Navegue pelos cards abaixo e explore cada área do site.
-      </p>
-    </div>
+<section class="hero container">
+  <h2>Bem-vinda(o) ao meu espaço!</h2>
+  <p>Aqui compartilho minha jornada na nutrição, conteúdos, receitas e aprendizados.</p>
+</section>
+
+<section class="index-cards container">
+  <div class="index-cards-grid">
+
+    <a href="sobre.html" class="index-card">
+      <h3>Sobre o site</h3>
+      <p>Propósito, visão e como navegar.</p>
+    </a>
+
+    <a href="historia.html" class="index-card">
+      <h3>Minha História</h3>
+      <p>Minha trajetória pessoal com alimentação.</p>
+    </a>
+
+    <a href="receitas.html" class="index-card">
+      <h3>Receitas</h3>
+      <p>Práticas, acessíveis e gostosas.</p>
+    </a>
+
+    <a href="conteudos.html" class="index-card">
+      <h3>Conteúdos Educativos</h3>
+      <p>Explicações simples e úteis.</p>
+    </a>
+
+    <a href="contato.html" class="index-card">
+      <h3>Contato</h3>
+      <p>WhatsApp, e-mail e Instagram.</p>
+    </a>
+
   </div>
 </section>
 
-<section class="index-cards">
-  <div class="container">
-    <h2 class="index-cards-title">O que você encontra aqui</h2>
-    <div class="index-cards-grid">
-      <a href="sobre.html" class="index-card slide-up"><h3>Sobre o site</h3><p>Propósito, visão e como navegar.</p></a>
-      <a href="historia.html" class="index-card slide-up"><h3>Minha História</h3><p>Minha jornada pessoal com alimentação.</p></a>
-      <a href="receitas.html" class="index-card slide-up"><h3>Receitas</h3><p>Práticas, acessíveis e gostosas.</p></a>
-      <a href="conteudos.html" class="index-card slide-up"><h3>Conteúdos Educativos</h3><p>Explicações simples e úteis.</p></a>
-      <a href="contato.html" class="index-card slide-up"><h3>Contato</h3><p>Fale comigo por WhatsApp, e-mail e IG.</p></a>
-    </div>
-  </div>
-</section>
-
-<footer class="site-footer">
-  <div class="container">
-    <p>© <span id="year"></span> Letícia Dalprá — Futura Nutricionista.</p>
-  </div>
-</footer>
-
-<script>
-  // ano
-  document.getElementById('year').textContent = new Date().getFullYear();
-  // dark mode
-  const toggle = document.getElementById('darkToggle');
-  if(localStorage.getItem('darkMode') === 'true'){ document.documentElement.classList.add('dark'); }
-  toggle.addEventListener('click', () => {
-    document.documentElement.classList.toggle('dark');
-    localStorage.setItem('darkMode', document.documentElement.classList.contains('dark'));
-  });
-</script>
 </body>
 </html>

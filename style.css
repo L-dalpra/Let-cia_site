@@ -300,22 +300,6 @@ img {
   margin-bottom: 16px;
 }
 
-.btn-voltar {
-  display: inline-block;
-  margin-top: 35px;
-  padding: 10px 18px;
-  background: var(--sage-500);
-  color: #fff;
-  text-decoration: none;
-  border-radius: 10px;
-  float: right;
-  transition: 0.25s;
-}
-
-.btn-voltar:hover {
-  background: var(--sage-700);
-}
-
 /* ===========================
    CONTATO - CARDS + FOTO
 =========================== */
@@ -507,3 +491,4 @@ img {
   background: var(--accent-dark);
   color: #1d1f1b;
 }
+
